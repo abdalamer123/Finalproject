@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void openGamespace(){
+    public void openGamespace(){// comment
         Intent intent = new Intent(this,Gamespace.class );//into the game we go
         startActivity(intent );
     }
