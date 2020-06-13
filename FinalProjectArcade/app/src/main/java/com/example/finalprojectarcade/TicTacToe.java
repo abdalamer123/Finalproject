@@ -12,3 +12,4 @@ public class TicTacToe extends AppCompatActivity {
         setContentView(R.layout.activity_tic_tac_toe);
     }
 }
+//xml code
