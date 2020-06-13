@@ -1,11 +1,11 @@
 package com.example.finalprojectarcade;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
@@ -28,3 +28,4 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 //no
+//i have updated the xml
