@@ -1,9 +1,11 @@
 package com.example.finalprojectarcade;
+//i am using my API here
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -13,6 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,12 +28,21 @@ import androidx.appcompat.app.AppCompatActivity;
 public class GameSearch extends AppCompatActivity {
     EditText GameEdittext;
     TextView textView1;// this is my textview
+    TextView textView2;
+    TextView textView3;
+    TextView textView4;
+    ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_search);
          GameEdittext =findViewById(R.id.search_bar);
-         textView1 =findViewById(R.id.textview1);// linking my textview
+         textView1 =findViewById(R.id.textview1);
+         textView2 = findViewById(R.id.textview2);
+         textView3 = findViewById(R.id.textview3);
+         textView4 = findViewById(R.id.textview4);
+         image = findViewById(R.id.image);
+         // linking my textview
     }
     public void fetchData(View view) {
 // ..// Instantiate the RequestQueue.
@@ -39,7 +51,7 @@ public class GameSearch extends AppCompatActivity {
 
 
 // Request a string response from the provided URL.
-        String results = GameEdittext.getText().toString();
+        final String results = GameEdittext.getText().toString();
 
 
         final JsonObjectRequest stringRequest = new JsonObjectRequest(Request.Method.GET, url+results,null,
@@ -49,9 +61,24 @@ public class GameSearch extends AppCompatActivity {
                         // would i put the settext here?/// i put it here and it didnt work
                         // Display the first 500 characters of the response string.
                         try {
+                            String names =response.getString("name");
+                            String released = response.getString("released");
                             String games = response.getString("description");
-                            textView1.setText(games);          // the string is game i want to get the information from the edittext and put it into the textview...
+                            String imageUrl = response.getString("background_image");
+                            String  rating = response.getString("rating");
+                            Picasso.get().load(imageUrl).into(image);
+                            textView1.setText(names);
+                            textView2.setText(released);
+                            textView3.setText(games);
+                            textView4.setText(rating);
+
+
+                            Log.d("results",names);
+                            Log.d("results",rating);// the string is game i want to get the information from the edittext and put it into the textview...
+                            Log.d("results",released);
                             Log.d("results",games);
+                            Log.d("results",imageUrl);
+
 
                         } catch (JSONException e) {
                             e.printStackTrace();

@@ -55,7 +55,7 @@
       android:text="Tic Tac Toe"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.72"
+      app:layout_constraintHorizontal_bias="0.634"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintVertical_bias="0.976" />
@@ -70,7 +70,7 @@
       app:layout_constraintHorizontal_bias="0.057"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.525" />
+      app:layout_constraintVertical_bias="0.57" />
 
   <Button
       android:id="@+id/AnagramGame"
@@ -105,10 +105,10 @@
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.731"
+      app:layout_constraintHorizontal_bias="0.765"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.061" />
+      app:layout_constraintVertical_bias="0.369" />
 
   <Button
       android:id="@+id/SlotMachine"
@@ -117,9 +117,9 @@
       android:text=" SlotMachine"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.973"
+      app:layout_constraintHorizontal_bias="0.94"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.807" />
+      app:layout_constraintVertical_bias="0.818" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

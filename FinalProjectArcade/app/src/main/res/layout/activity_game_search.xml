@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameSearch">
-<EditText
-    android:layout_width="350dp"
-    android:layout_height="wrap_content"
-  android:id="@+id/search_bar"/>
-  
-  <Button
-      android:id="@+id/search_button"
-      android:text="search"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context=".GameSearch">
+  <EditText
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+    android:id="@+id/search_bar"/>
+
+    <Button
+        android:id="@+id/search_button"
+        android:text="search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fetchData" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:id="@+id/textview1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview4"/>
+    <ImageView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:onClick="fetchData" />
+      android:id="@+id/image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview3"/>
 
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-    android:id="@+id/textview1"/>
 
-  </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
