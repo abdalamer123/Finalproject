@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FinalProjectArcade</string>
+    <string name="text_loading">Loading....t</string>
+    <string name="text_guess">Guess the Number!!</string>
+    <string name="text_congrats">Congrats you got it you guessed the answer in</string>
+    <string name="text_tries">tries!</string>
+    <string name="txtCredits"><a href="http://www.google.com">Google</a></string>
 </resources>
