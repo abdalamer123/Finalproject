@@ -45,6 +45,24 @@ public class Gamespace extends AppCompatActivity {
                 openRockPaperScissors();
             }
         });
+        NumbersGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNumbersGame();
+            }
+        });
+        CoinFlip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCoinFlip();
+            }
+        });
+        AnagramGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAnagramGame();
+            }
+        });
     }
     public void openTicTacToe(){
         Intent intent = new Intent(this,TicTacToe.class);
@@ -57,5 +75,19 @@ public class Gamespace extends AppCompatActivity {
     public  void openRockPaperScissors(){
         Intent intent = new Intent(this,RockPaperScissors.class);
         startActivity(intent);
+
+    }
+    public void openNumbersGame(){
+        Intent intent = new Intent(this,NumbersGame.class);
+        startActivity(intent);
+    }
+    public void  openCoinFlip(){
+        Intent intent = new Intent(this,CoinFlip.class);
+        startActivity(intent);
+    }
+    public void  openAnagramGame(){
+        Intent intent  = new Intent(this,AnagramGame.class);
+        startActivity(intent);
+
     }
 }

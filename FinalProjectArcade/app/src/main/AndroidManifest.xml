@@ -10,7 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".RockPaperScissors"></activity>
+        <activity android:name=".AnagramGame"></activity>
+        <activity android:name=".CoinFlip" />
+        <activity
+            android:name=".GameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NumbersGame"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RockPaperScissors" />
         <activity android:name=".GameSearch" />
         <activity android:name=".TicTacToe" />
         <activity android:name=".Gamespace" />

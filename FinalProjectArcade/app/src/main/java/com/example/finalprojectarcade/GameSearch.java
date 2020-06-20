@@ -31,6 +31,7 @@ public class GameSearch extends AppCompatActivity {
     TextView textView2;
     TextView textView3;
     TextView textView4;
+    TextView textView5;
     ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +42,14 @@ public class GameSearch extends AppCompatActivity {
          textView2 = findViewById(R.id.textview2);
          textView3 = findViewById(R.id.textview3);
          textView4 = findViewById(R.id.textview4);
+         textView5 = findViewById(R.id.textview5);
          image = findViewById(R.id.image);
          // linking my textview
     }
     public void fetchData(View view) {
 // ..// Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="https://rawg-video-games-database.p.rapidapi.com/games/";
+        String url ="https://rawg-video-games-database.p.rapidapi.com/games/";/////the api works
 
 
 // Request a string response from the provided URL.
@@ -61,9 +63,11 @@ public class GameSearch extends AppCompatActivity {
                         // would i put the settext here?/// i put it here and it didnt work
                         // Display the first 500 characters of the response string.
                         try {
+
                             String names =response.getString("name");
                             String released = response.getString("released");
                             String games = response.getString("description");
+                         //   String genres =response.getString("genres");
                             String imageUrl = response.getString("background_image");
                             String  rating = response.getString("rating");
                             Picasso.get().load(imageUrl).into(image);
@@ -71,10 +75,13 @@ public class GameSearch extends AppCompatActivity {
                             textView2.setText(released);
                             textView3.setText(games);
                             textView4.setText(rating);
+                          //  textView5.setText(genres);
+
 
 
                             Log.d("results",names);
-                            Log.d("results",rating);// the string is game i want to get the information from the edittext and put it into the textview...
+                            Log.d("results",rating);
+                           // Log.d("results",genres);//he string is game i want to get the information from the edittext and put it into the textview...
                             Log.d("results",released);
                             Log.d("results",games);
                             Log.d("results",imageUrl);

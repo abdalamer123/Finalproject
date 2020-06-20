@@ -9,15 +9,14 @@
 
   <Button
       android:id="@+id/NumbersGame"
-      android:layout_width="143dp"
-      android:layout_height="57dp"
+      android:layout_width="93dp"
+      android:layout_height="51dp"
       android:text="Numbers Game"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.38"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.807" />
+      app:layout_constraintVertical_bias="0.226" />
 
   <TextView
 
@@ -38,27 +37,25 @@
 
   <Button
       android:id="@+id/RockPaperScissors"
-      android:layout_width="143dp"
-      android:layout_height="57dp"
-      android:text=" RockPaperScissors"
+      android:layout_width="95dp"
+      android:layout_height="77dp"
+      android:text="Rock Paper Scissors"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.022"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.976" />
+      app:layout_constraintVertical_bias="0.79" />
 
   <Button
       android:id="@+id/TicTacToe"
-      android:layout_width="143dp"
-      android:layout_height="57dp"
+      android:layout_width="93dp"
+      android:layout_height="51dp"
       android:text="Tic Tac Toe"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.634"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.976" />
+      app:layout_constraintVertical_bias="0.654" />
 
   <Button
       android:id="@+id/GameSearch"
@@ -74,27 +71,25 @@
 
   <Button
       android:id="@+id/AnagramGame"
-      android:layout_width="143dp"
-      android:layout_height="57dp"
+      android:layout_width="93dp"
+      android:layout_height="51dp"
       android:text="Anagram game"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.186"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.891" />
+      app:layout_constraintVertical_bias="0.327" />
 
   <Button
       android:id="@+id/CoinFlip"
-      android:layout_width="143dp"
-      android:layout_height="57dp"
+      android:layout_width="93dp"
+      android:layout_height="51dp"
       android:text="CoinFlip"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.813"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.903" />
+      app:layout_constraintVertical_bias="0.532" />
 
   <TextView
       android:id="@+id/textView"
@@ -105,21 +100,33 @@
       android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.765"
+      app:layout_constraintHorizontal_bias="0.431"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.369" />
+      app:layout_constraintVertical_bias="0.107" />
 
   <Button
       android:id="@+id/SlotMachine"
-      android:layout_width="143dp"
-      android:layout_height="57dp"
-      android:text=" SlotMachine"
+      android:layout_width="93dp"
+      android:layout_height="51dp"
+      android:text="Slot Machine"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.94"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.818" />
+      app:layout_constraintVertical_bias="0.429" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Work In Progress"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.383" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
